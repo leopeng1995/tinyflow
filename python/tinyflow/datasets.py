@@ -2,7 +2,10 @@
 import numpy as np
 from collections import namedtuple
 from sklearn.datasets import fetch_mldata
-import cPickle
+try:
+    import cPickle
+except:
+    import pickle as cPickle
 import sys
 import os
 from subprocess import call
